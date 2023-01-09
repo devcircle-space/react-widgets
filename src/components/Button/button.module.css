@@ -1,0 +1,23 @@
+.button {
+	transition: 0.2s ease-in-out;
+	padding: 0.6rem 1.5rem;
+	border-radius: 0.3rem;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+.button.button_primary {
+	border-color: #222;
+	background: #222;
+	color: white;
+}
+.button.button_secondary {
+	border-color: #222;
+	background: transparent;
+	color: #222;
+}
+.button.button_primary:hover,
+.button.button_secondary:hover {
+	background: black;
+	border-color: black;
+	color: white;
+}
