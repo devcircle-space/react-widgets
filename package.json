@@ -1,0 +1,24 @@
+{
+  "name": "react-widgets",
+  "version": "0.0.1",
+  "description": "A collection of raw and customisable react widgets",
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-devdesigner/react-widgets.git"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": "Aakash Jha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-devdesigner/react-widgets/issues"
+  },
+  "homepage": "https://github.com/the-devdesigner/react-widgets#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
