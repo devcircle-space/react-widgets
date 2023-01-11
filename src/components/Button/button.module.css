@@ -2,12 +2,10 @@
 
 .button {
 	transition: 0.2s ease-in-out;
-	padding: 0.6rem 1.5rem;
-	border-radius: 0.3rem;
 	border: 1px solid transparent;
 	cursor: pointer;
 }
-
+/* primary button */
 .button.button_primary {
 	background: var(--primary-main);
 	color: var(--primary-surface);
@@ -21,7 +19,7 @@
 .button.button_primary:focus {
 	background: var(--primary-pressed);
 }
-
+/* secondary button */
 .button.button_secondary {
 	background: var(--primary-surface);
 	color: var(--primary-main);
@@ -35,7 +33,7 @@
 .button.button_secondary:focus {
 	background: var(--primary-pressed);
 }
-
+/* outline button */
 .button.button_outline {
 	background: var(--neutral-10);
 	color: var(--neutral-100);
@@ -53,7 +51,7 @@
 	border-color: var(--neutral-60);
 	outline: var(--primary-pressed);
 }
-
+/* danger button */
 .button.button_danger {
 	background: var(--danger-main);
 	color: var(--danger-surface);
@@ -66,4 +64,30 @@
 }
 .button.button_danger:focus {
 	background: var(--danger-pressed);
+}
+/* normal button */
+.button.button_normal {
+	padding: 0.6rem 1.2rem;
+	border-radius: 0rem;
+}
+/* big button */
+.button.button_big {
+	padding: 0.9rem 1.5rem;
+}
+/* rounded button */
+.button.button_rounded {
+	border-radius: 0.3rem;
+}
+/* pill shaped button */
+.button.button_pill {
+	border-radius: 8rem 8rem;
+}
+.button.button_disabled,
+.button.button_disabled:focus,
+.button.button_disabled:hover,
+.button.button_disabled:active {
+	cursor: not-allowed;
+	border-color: var(--neutral-50);
+	background: var(--neutral-30);
+	color: var(--neutral-70);
 }

@@ -7,10 +7,13 @@ export default {
 	component: Button,
 	args: {
 		label: "Click Me",
+		size: "normal",
 	},
 	argTypes: {
 		onClick: { action: "clicked" },
 		btnStyle: { control: "select" },
+		size: { control: "radio" },
+		disabled: { control: "boolean" },
 	},
 } as ComponentMeta<typeof Button>;
 
