@@ -1,3 +1,5 @@
+@import url("../../styles/colors.css");
+
 .button {
 	transition: 0.2s ease-in-out;
 	padding: 0.6rem 1.5rem;
@@ -5,19 +7,63 @@
 	border: 1px solid transparent;
 	cursor: pointer;
 }
+
 .button.button_primary {
-	border-color: #222;
-	background: #222;
-	color: white;
+	background: var(--primary-main);
+	color: var(--primary-surface);
 }
+.button.button_primary:hover {
+	background: var(--primary-hover);
+}
+.button.button_primary:active {
+	border-color: var(--primary-border);
+}
+.button.button_primary:focus {
+	background: var(--primary-pressed);
+}
+
 .button.button_secondary {
-	border-color: #222;
-	background: transparent;
-	color: #222;
+	background: var(--primary-surface);
+	color: var(--primary-main);
 }
-.button.button_primary:hover,
 .button.button_secondary:hover {
-	background: black;
-	border-color: black;
-	color: white;
+	color: var(--primary-hover);
+}
+.button.button_secondary:active {
+	border-color: var(--primary-border);
+}
+.button.button_secondary:focus {
+	background: var(--primary-pressed);
+}
+
+.button.button_outline {
+	background: var(--neutral-10);
+	color: var(--neutral-100);
+	border-color: var(--neutral-40);
+}
+.button.button_outline:hover {
+	background: var(--neutral-20);
+	border-color: var(--neutral-50);
+}
+.button.button_outline:active {
+	background: var(--neutral-30);
+	border-color: var(--neutral-60);
+}
+.button.button_outline:focus {
+	border-color: var(--neutral-60);
+	outline: var(--primary-pressed);
+}
+
+.button.button_danger {
+	background: var(--danger-main);
+	color: var(--danger-surface);
+}
+.button.button_danger:hover {
+	background: var(--danger-hover);
+}
+.button.button_danger:active {
+	border-color: var(--danger-border);
+}
+.button.button_danger:focus {
+	background: var(--danger-pressed);
 }
