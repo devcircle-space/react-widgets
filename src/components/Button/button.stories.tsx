@@ -8,6 +8,7 @@ export default {
 	args: {
 		label: "Click Me",
 		size: "normal",
+		shape: "normal",
 	},
 	argTypes: {
 		onClick: { action: "clicked" },
