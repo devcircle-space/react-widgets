@@ -1,0 +1,30 @@
+@import url("../../styles/colors.css");
+
+.textbox {
+	padding: 0.5rem 0.8rem;
+	outline: none;
+	border: var(--neutral-30) 1px solid;
+}
+.textbox:hover {
+	border-color: var(--primary-border);
+}
+.textbox:focus {
+	border-color: var(--primary-main);
+	outline: 1px solid var(--primary-border);
+}
+.textbox.textbox_normal {
+	border-radius: 0rem;
+}
+.textbox.textbox_rounded {
+	border-radius: 0.3rem;
+}
+.textbox.textbox_disabled,
+.textbox.textbox_disabled:focus,
+.textbox.textbox_disabled:hover,
+.textbox.textbox_disabled:active {
+	cursor: not-allowed;
+	border-color: var(--neutral-50);
+	background: var(--neutral-30);
+	color: var(--neutral-70);
+}
+
